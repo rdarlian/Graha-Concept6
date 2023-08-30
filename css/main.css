@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Birthstone Bounce", cursive, "Poppins", sans-serif; */
+  /* font-family: ; */
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: url("/img/bgoval.png") repeat 0 0;
+}
+.cover-date {
+  position: relative;
+  width: 335px;
+  height: 772px;
+  flex-shrink: 0;
+  background: #3d161a;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.25) inset;
+  padding-top: 20px;
+}
+
+.main-container {
+  width: 390px;
+  background-size: cover;
+
+  background-image: url("/img/bgoval.png");
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.cover-main {
+  width: 335px;
+  height: 772px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ffe68e, #d8a217) 1;
+  padding-top: 148px;
+}
+
+/* Font nih bos */
+.color-linear {
+  background: linear-gradient(118deg, #ffe5a8 0%, #ca920e 100%, #e8b439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.married-32-birth {
+  color: #fff;
+  text-align: center;
+  font-family: Birthstone Bounce;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.married-14-pop {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+}
+.married-16-pop {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+.married-12-pop {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.married-18-pop {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.married-86-birth {
+  font-family: Birthstone Bounce;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.married-42-birth {
+  font-family: Birthstone Bounce;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.married-26-birth {
+  text-align: center;
+  font-family: Birthstone Bounce;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.couplebox {
+  text-align: center;
+}
+.place-box {
+  margin-top: 10px;
+  text-align: center;
+}
+.swipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 61px;
+}
+.ornament {
+  width: 225.757px;
+  height: 251px;
+  flex-shrink: 0;
+}
+.ornament1 {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 21px;
+  right: 29px;
+}
+.ornament2 {
+  position: absolute;
+  top: 553px;
+  left: 29px;
+}
+
+.restu {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: 600px;
+  text-align: center;
+}
+.greeting-box {
+  width: 327px;
+  text-align: center;
+  margin: auto;
+  margin-top: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.picture-married {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 36px;
+}
+
+.img-ellipse {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 1000px;
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.1, #ffe5a8),
+    color-stop(0.67, #e8b439),
+    color-stop(0.2, #ca920e)
+  );
+  background-image: -moz-linear-gradient(center bottom);
+  padding: 2px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.name-box {
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
