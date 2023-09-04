@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wedding</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cover.css" />
   </head>
 
   <body>
-    <div class="cover-date main-container">
+    <div class="cover cover-container" id="cover">
+      <div class="cover-utama">
+        <h1 class="wedding-of">The Wedding of</h1>
+        <div>
+          <h1 class="cover-wedding wedding-name1">Adin</h1>
+          <h1 class="wedding-name2">&</h1>
+          <h1 class="cover-wedding wedding-name3">Lisa</h1>
+        </div>
+
+        <div class="invitation">
+          <div class="invitation-box">
+            <p class="dear">Dear</p>
+            <p class="name">Grahacaesara</p>
+          </div>
+          <p class="invite">You are cordially invited to our wedding</p>
+        </div>
+
+        <button class="btn-inv" onclick="hide()">💌 Buka Undangan</button>
+      </div>
+    </div>
+    <div class="cover-date main-container filter" id="main">
       <div class="cover-main">
         <img class="ornament1" src="assets/svg/ornament.svg" alt="" />
         <div>
@@ -16,7 +37,7 @@
           <h1 class="married-32-birth color-linear">Married</h1>
         </div>
 
-        <div class="couplebox">
+        <div class="cover-couple-box">
           <h1 class="married-86-birth color-linear">Adin</h1>
           <h1 class="married-42-birth color-linear">&</h1>
           <h1 class="married-86-birth color-linear">Lisa</h1>
@@ -73,6 +94,282 @@
           </div>
         </div>
       </div>
+      <div class="ringkasan-acara">
+        <div class="ringkasan-header-box">
+          <h1 class="married-18-pop color-linear">Ringkasan Acara</h1>
+          <p class="married-14-pop color-linear">
+            Serangkaian acara kami nantinya
+          </p>
+        </div>
+        <img src="assets/png/masjid.png" alt="masjid" />
+
+        <div class="akad-box color-linear">
+          <h1 class="married-18-pop">Akad Nikah</h1>
+          <p class="married-14-pop">Monday, 32 February 2023 08:00 Pagi</p>
+          <p class="married-14-pop">
+            Masjid Nurul Sakinah <br />
+            Jl Kebagusan 3, Ujung kulon Banyuwangi, Jawa Timur - Indonesia
+          </p>
+        </div>
+        <p class="married-14-pop-orange">See on Gmaps Mode</p>
+
+        <img src="assets/png/ikn.png" alt="" />
+        <div class="akad-box color-linear">
+          <h1 class="married-18-pop">Resepsi Pernikahan</h1>
+          <p class="married-14-pop">Monday, 32 February 2023 08:00 Pagi</p>
+          <p class="married-14-pop">
+            Jakarta International Stadium <br />
+            Jl Kebagusan 3, Ujung kulon Banyuwangi, Jakarta - Indonesia
+          </p>
+        </div>
+        <p class="married-14-pop-orange">See on Gmaps Mode</p>
+      </div>
+      <div class="ourstory">
+        <div class="img-ourstory">
+          <img class="" src="assets/svg/tangan.svg" alt="" />
+        </div>
+
+        <div class="ourstory-header-box">
+          <h1 class="married-18-pop color-linear">Our Story Begin</h1>
+          <p class="married-14-pop color-linear">
+            Cerita bagaimana kami dipertemukan
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- <img class="line" src="assets/svg/line.svg" alt="" /> -->
+          <div class="item-ourstory">
+            <img src="assets/svg/ellipse.svg" alt="" />
+            <div class="item-text">
+              <h1 class="married-18-pop color-linear">03 Maret 2021</h1>
+              <p class="married-14-pop color-secondary">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              </p>
+            </div>
+          </div>
+          <div class="item-ourstory">
+            <img src="assets/svg/ellipse.svg" alt="" />
+            <div class="item-text">
+              <h1 class="married-18-pop color-linear">18 April 2021</h1>
+              <p class="married-14-pop color-secondary">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium,
+              </p>
+            </div>
+          </div>
+          <div class="item-ourstory">
+            <img src="assets/svg/ellipse.svg" alt="" />
+            <div class="item-text">
+              <h1 class="married-18-pop color-linear">28 April 2021</h1>
+              <p class="married-14-pop color-secondary">
+                Sed ut perspiciatis unde
+              </p>
+            </div>
+          </div>
+          <div class="item-ourstory">
+            <img src="assets/svg/ellipse.svg" alt="" />
+            <div class="item-text">
+              <h1 class="married-18-pop color-linear">18 May 2021</h1>
+              <p class="married-14-pop color-secondary">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-video">
+        <div class="video-header">
+          <p class="married-20-pop color-linear">A Glimpse of</p>
+          <h1 class="married-52-birth color-linear">Our Memories</h1>
+        </div>
+        <div class="tron-video"></div>
+        <div class="tron-image">
+          <img
+            class="tron-image1"
+            src="https://s3-alpha-sig.figma.com/img/550b/72f2/7eeb4c4f4077a22b4a8f2df5c9c39957?Expires=1694390400&Signature=cxD6xUuWRV37S1qReui96b7E-yjZ1UM7ma-UsVT6kr2qoHOHFVmX1j~7Bc0n9Lf8lkVJP3FzB8InIijCKUEBau~QcFAEFF1ze1CgdB~zc8vVVVWWKteVA6PVrdo1C8DcUVBY4TbdlZRGtYO0iey37MQ447rG9~tSOfIqyI2~l7w7rH9lQf6lBTsFvLEbjAs2N8JB4TbHXfK3tjmbJdcVJNd1Kemj6EHaTR2C~RBrLjzE7EHwQj4i06idryDwADSTpTYWcEeAyiDnzJT9EAiZwoMDwnHVzHRdOH760RBcofKKgz5uQmIwAUgTk2NjR2u12wowDF4eSfJDcEMopDjQgg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+        </div>
+        <div class="tron-image-grup">
+          <div class="item-image-1">
+            <img class="tron-image2" src="/assets/png/wedding.png" alt="" />
+          </div>
+          <div class="item-image-2">
+            <img class="tron-image3" src="/assets/png/wedding.png" alt="" />
+            <img class="tron-image3" src="/assets/png/wedding.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message-title">
+          <h1 class="married-18-pop color-linear">Kirim Ucapan</h1>
+          <p class="married-14-pop color-linear">
+            Rangkaian kata kata untuk kami yang Sedang berbagahia
+          </p>
+        </div>
+
+        <div class="message-box">
+          <div class="card">
+            <h1 class="card-title">Naufal Hakim</h1>
+            <hr />
+            <p class="card-isi">
+              Sed ut perspiciatis unde omnis iste natus error sit perspiciatis
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Disti Indriani</h1>
+            <hr />
+            <p class="card-isi">Congratulation ! 😍</p>
+          </div>
+          <div class="card-right">
+            <h1 class="card-title">Asep Cahyadi</h1>
+            <hr />
+            <p class="card-isi">Hmmmm sudah kuduga, Congratilation gaes 🥳</p>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Rahmat Julianto</h1>
+            <hr />
+            <p class="card-isi">
+              Sed ut perspiciatis unde omnis iste natus error sit perspiciatis
+            </p>
+          </div>
+          <div class="card-right">
+            <h1 class="card-title">Dian Setiyani N.</h1>
+            <hr />
+            <p class="card-isi">Congratulation ! 😍</p>
+          </div>
+        </div>
+
+        <div class="ucapan">
+          <h1 class="married-18-pop color-linear">RSVP dan Ucapan</h1>
+
+          <form action="">
+            <div class="box-form">
+              <div class="form-grup">
+                <label for="name" class="married-14-pop color-linear"
+                  >Nama</label
+                >
+                <input class="form-linear" type="text" placeholder="Rahmat" />
+              </div>
+              <div class="form-grup">
+                <label for="name" class="married-14-pop color-linear"
+                  >Alamat</label
+                >
+                <input class="form-linear" type="text" placeholder="Rahmat" />
+              </div>
+
+              <div class="form-grup-col">
+                <div class="form-grup">
+                  <label for="name" class="married-14-pop color-linear"
+                    >Undangan Dari</label
+                  >
+                  <input class="form-linear" type="text" placeholder="Rahmat" />
+                </div>
+                <div class="form-grup">
+                  <label for="name" class="married-14-pop color-linear"
+                    >Jumlah Kehadiran</label
+                  >
+                  <input class="form-linear" type="text" placeholder="Rahmat" />
+                </div>
+              </div>
+
+              <div class="form-grup">
+                <label for="ucapan" class="married-14-pop color-linear"
+                  >Ucapan</label
+                >
+                <textarea class="form-linear"></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit married-18-pop">
+                Submit Ucapan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="ornament-full">
+          <img src="assets/svg/ornamentjoint.svg" alt="" />
+          <img src="assets/svg/ornamentmid.svg" alt="" />
+          <img src="assets/svg/ornamentjointleft.svg" alt="" />
+        </div>
+        <div class="payment-header">
+          <h1 class="married-18-pop color-linear">Amplop Digital</h1>
+          <p class="color-linear color-opacity">
+            Doa restu anda merupakan karunia yang sangat berarti bagi kami. dan
+            jika memberi adalah ungkapan terimakasih anda, Anda dapat memberi
+            kado secara cashless
+          </p>
+          <div class="item-payment">
+            <div class="img-payment-box">
+              <a href="#" class="married-16-pop color-linear">
+                <img src="assets/png/Gopay.png" alt="" width="24px" />
+                GOPAY
+              </a>
+            </div>
+
+            <div class="img-payment-box">
+              <a href="#" class="married-16-pop color-linear">
+                <img src="#" alt="" width="24px" />
+                BNI
+              </a>
+            </div>
+
+            <div class="img-payment-box">
+              <a href="#" class="color-linear">
+                <img src="#" alt="" width="24px" />Jenius
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-code">
+          <div></div>
+        </div>
+
+        <div class="kehormatan">
+          <p class="married-14-pop color-linear">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/ibu/Saudara/i berkenan hadir untuk memberikan do’a restu
+            kepada kedua mempelai.
+          </p>
+        </div>
+
+        <div class="name-close">
+          <hr />
+          <h3 class="married-42-birth color-linear">Adin & Lisa</h3>
+          <hr />
+        </div>
+        <p class="close-alert color-linear">Himbauan Protocol Kesehatan :</p>
+
+        <div class="close-item">
+          <img class="img-ellipse-36" src="assets/svg/clean-hand.svg" alt="" />
+          <img class="img-ellipse-36" src="assets/svg/face-mask.svg" alt="" />
+          <img
+            class="img-ellipse-36"
+            src="assets/svg/social-distance.svg"
+            alt=""
+          />
+        </div>
+        <div class="close-last">
+          <p class="married-14-pop color-linear">Website invitation by</p>
+          <div class="img-last">
+            <img src="assets/svg/Brandmark.svg" alt="" />
+            <img class="" src="assets/svg/ayunikalogo.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      function hide() {
+        document.getElementById("cover").style.visibility = "hidden";
+        document.getElementById("main").style.filter = "none";
+      }
+    </script>
   </body>
 </html>
