@@ -15,9 +15,15 @@ body {
   width: 375px;
   height: 100vh;
   flex-shrink: 0;
-  background: #3d161a;
   box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.25) inset;
   padding-top: 20px;
+}
+
+.light-red {
+  background: #831e1f;
+}
+.dark-red {
+  background: #3d161a;
 }
 
 .main-container {
@@ -33,12 +39,22 @@ body {
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
+}
+.border-gradient {
   border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to right, #ffe5a8, #d8a217) 1;
   padding-top: 148px;
 }
+.cover-padding {
+  padding-top: 139px;
+}
 
+.img-cover {
+  position: absolute;
+  left: 22px;
+  top: 16px;
+}
 /* Font nih bos */
 .color-linear {
   background: -webkit-linear-gradient(275deg, #ffe5a8, #e8b439, #d8a217);
@@ -155,7 +171,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 375px;
-  height: 600px;
   text-align: center;
 }
 .greeting-box {
@@ -172,6 +187,9 @@ body {
   justify-content: center;
   gap: 25px;
   margin-top: 36px;
+}
+.flex-column {
+  flex-direction: column;
 }
 
 .img-ellipse {
@@ -195,9 +213,17 @@ body {
   object-fit: cover;
   margin-bottom: 16px;
 }
+
 .name-box {
   display: flex;
   width: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.name-box-single {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -209,18 +235,27 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 70px;
 }
 .ringkasan-header-box {
   text-align: center;
   margin-bottom: 20px;
 }
-.ringkasan-acara img {
-  width: 327px;
-  height: 200px;
+
+.img-radius {
   border-radius: 4px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+}
+.img-240 {
+  width: 327px;
+  height: 240px;
+}
+
+.img-230 {
+  width: 327px;
+  height: 200px;
 }
 
 .akad-box {
@@ -462,6 +497,34 @@ body {
   width: 339px;
   height: 106px;
   flex-shrink: 0;
+}
+
+.btn-add {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: none;
+  color: #871e1f;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: linear-gradient(
+      110deg,
+      #ffe5a8 -12.7%,
+      #ca920e 94.32%,
+      #e8b439 94.32%
+    ),
+    #fff;
+  box-shadow: 0px 10px 16px 0px rgba(14, 21, 89, 0.16);
 }
 .btn-submit {
   display: flex;
