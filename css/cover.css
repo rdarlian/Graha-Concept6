@@ -1,32 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* font-family: "Birthstone Bounce", cursive, "Poppins", sans-serif; */
-  /* font-family: ; */
-}
-body {
-  display: flex;
-  justify-content: center;
-  background: url("/img/bgoval.png") repeat 0 0;
-}
 .cover {
-  background: #3d161a;
-  width: 375px;
-  height: 812px;
+  background: rgba(0, 0, 0, 0.4);
   padding-top: 140px;
+  width: 375px;
+  height: 100vh;
+  flex-shrink: 0;
 }
 
-.main-container {
-  width: 390px;
+.cover-container {
+  width: 100vw;
   height: 100vh;
-  outline: red 2px solid;
+  position: absolute;
+  /* left: 0; */
+  top: 0;
+  z-index: 99;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/img/bgoval.png");
-  background-size: contain;
-  justify-content: center;
-  overflow-x: hidden;
+}
+.hidden {
+  visibility: hidden;
+}
+.filter {
+  filter: blur(5px);
 }
 
 .cover-wedding {
@@ -54,7 +49,7 @@ body {
   color: #fff;
 }
 
-.cover-main {
+.cover-utama {
   position: relative;
   width: 275px;
   height: 260px;
