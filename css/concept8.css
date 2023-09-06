@@ -1,0 +1,241 @@
+.linear-cover {
+  width: 375px;
+  height: 812px;
+  flex-shrink: 0;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("/assets/png/photo-cover.png");
+  background-position: 31% 80%;
+  background-size: cover;
+  background-repeat: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.border-cover {
+  width: 343px;
+  padding-top: 44px;
+  padding-bottom: 60px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.border-mempelai {
+  width: 343px;
+  padding-top: 44px;
+  padding-bottom: 60px;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.box-327 {
+  flex-direction: column;
+}
+.mb-76 {
+  margin-bottom: 76px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ornament-8 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.img-ornament8 {
+  width: 123.485px;
+  height: 24.143px;
+  flex-shrink: 0;
+}
+.reflect {
+  transform: scaleX(-1);
+}
+
+.ornament-footer {
+  margin-top: 130px;
+  position: relative;
+}
+.img-f1 {
+  position: absolute;
+  bottom: 0px;
+}
+.img-f2 {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 120px;
+}
+.img-f3 {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Ringkasan Acara */
+.ringkasan-acara {
+  padding-top: 37px;
+}
+.map-box {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* Documentary */
+.documentary {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 92px;
+}
+
+.item-documentary-top {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.item-documentary-second {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.item-documentary-bottom {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  margin-top: 10px;
+  margin-right: 34px;
+}
+.item-1 {
+  width: 46px;
+  height: 100px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.item-2 {
+  width: 161px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.item-3 {
+  width: 80px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.item-4 {
+  width: 127px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.item-5 {
+  width: 80px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.item-6 {
+  width: 217px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  position: absolute;
+  left: 42px;
+  top: 342px;
+}
+.item-7 {
+  position: relative;
+  right: -131px;
+  width: 80px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.item-title {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 39px;
+}
+.item-text {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-documentary {
+  width: 24px;
+  height: 24px;
+}
+.documentary-btm {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.btn-documentary {
+  display: inline-flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #10288a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: white;
+  border-radius: 8px;
+  border: 0;
+}
+
+/* Message */
+
+.gallery-vas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-header {
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+
+.form-linear {
+  border: 1px solid rgba(39, 61, 120, 1); /*2*/
+  background: transparent;
+  color: white;
+}

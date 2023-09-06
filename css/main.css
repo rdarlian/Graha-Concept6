@@ -25,12 +25,23 @@ body {
 .dark-red {
   background: #3d161a;
 }
+.slate-800 {
+  background: #050810;
+}
+.bg-white {
+  background: #fff;
+}
 
 .main-container {
   width: 390px;
   background-size: cover;
   background-image: url("/img/bgoval.png");
   overflow-x: hidden;
+}
+.main-container-none {
+  width: 390px;
+  overflow-x: hidden;
+  padding-top: 0;
 }
 
 .cover-main {
@@ -40,14 +51,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.border-gradient {
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(to right, #ffe5a8, #d8a217) 1;
-  padding-top: 148px;
-}
 .cover-padding {
   padding-top: 139px;
+}
+.cover-padding-60 {
+  padding-top: 60px;
 }
 
 .img-cover {
@@ -56,16 +64,43 @@ body {
   top: 16px;
 }
 /* Font nih bos */
+.display-center {
+  display: flex;
+  justify-content: center;
+}
 .color-linear {
   background: -webkit-linear-gradient(275deg, #ffe5a8, #e8b439, #d8a217);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.color-linear-v2 {
+  background: -webkit-linear-gradient(
+    275deg,
+    rgba(255, 230, 142, 1),
+    rgba(216, 162, 23, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-white {
+  color: #fff;
 }
 .color-secondary {
   color: #fdce5f;
 }
 .color-opacity {
   opacity: 0.7;
+}
+.color-orange {
+  color: #e1931e;
+}
+
+.regular {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
 }
 .married-14-pop {
   font-family: "Poppins";
@@ -74,6 +109,13 @@ body {
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
+}
+.married-20-pop {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .married-16-pop {
   font-family: Poppins;
@@ -110,6 +152,8 @@ body {
 .married-32-birth,
 .married-42-birth,
 .married-52-birth,
+.married-60-birth,
+.married-72-birth,
 .married-86-birth {
   font-family: Birthstone Bounce;
   font-style: normal;
@@ -118,6 +162,7 @@ body {
 }
 
 .married-26-birth {
+  font-size: 26px;
   text-align: center;
 }
 .married-32-birth {
@@ -130,10 +175,22 @@ body {
 .married-52-birth {
   font-size: 52px;
 }
+.married-60-birth {
+  font-size: 60px;
+}
+.married-72-birth {
+  font-size: 72px;
+}
 .married-86-birth {
   font-size: 86px;
 }
 
+.text-center {
+  text-align: center;
+}
+.text-itallic {
+  font-style: italic;
+}
 .cover-couple-box {
   text-align: center;
 }
@@ -167,12 +224,15 @@ body {
 }
 
 .restu {
-  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 375px;
   text-align: center;
 }
+.padding-top-56 {
+  padding-top: 56px;
+}
+
 .greeting-box {
   width: 327px;
   text-align: center;
@@ -235,11 +295,19 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 70px;
 }
+
+.padding-top-134 {
+  padding-top: 134px;
+}
+
 .ringkasan-header-box {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .img-radius {
@@ -255,7 +323,9 @@ body {
 
 .img-230 {
   width: 327px;
-  height: 200px;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .akad-box {
@@ -269,6 +339,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 32;
 }
 
 .married-14-pop-orange {
@@ -290,18 +361,7 @@ body {
   flex-direction: column;
   margin-top: 102px;
 }
-.img-ourstory {
-  border-radius: 10000px;
-  width: 180px;
-  height: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-}
-.ourstory img {
-  border-radius: 10000px;
-  height: 180px;
-}
+
 .ourstory-header-box {
   display: inline-flex;
   flex-direction: column;
@@ -309,92 +369,15 @@ body {
   gap: 6px;
 }
 
-.timeline {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 24px;
-  width: 327px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.item-ourstory {
-  display: flex;
-  gap: 16px;
-}
-.line {
-  width: 64px;
-  height: 0px;
-  transform: rotate();
-  flex-shrink: 0;
-  left: 16px;
-}
 .item-text {
   width: 279px;
 }
 
-.item-ourstory img {
-  height: 32px;
-}
-
-.section-video {
-  margin-top: 112px;
-}
-.video-header {
-  text-align: center;
-}
-
-.tron-video {
-  width: 343px;
-  height: 220px;
-  flex-shrink: 0;
-}
-
-.tron-image {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.tron-image1 {
-  width: 343px;
-  height: 120px;
-  object-fit: cover;
-}
-
-.tron-image-grup {
-  width: 343px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tron-image2 {
-  width: 204px;
-  height: 256px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-.item-image-2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.tron-image3 {
-  width: 123px;
-  height: 120px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
 /* Message */
 .message {
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card {
@@ -441,7 +424,6 @@ body {
   letter-spacing: -0.3px;
 }
 .message-title {
-  margin-top: 50px;
   flex-direction: column;
   align-items: center;
   gap: 6px;
@@ -467,12 +449,6 @@ body {
   left: 20px;
   padding: 15px 31px 15px 16px;
   border-radius: 16px;
-  border: 2px solid transparent; /*2*/
-  background: linear-gradient(45deg, #ffe68e, #d8a217) border-box; /*3*/
-  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-  mask-composite: exclude; /*5*/
 }
 .form-grup {
   display: flex;
@@ -524,6 +500,22 @@ body {
       #e8b439 94.32%
     ),
     #fff;
+  box-shadow: 0px 10px 16px 0px rgba(14, 21, 89, 0.16);
+}
+.btn-add-white {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: fit-content; */
+  border: none;
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #fff;
   box-shadow: 0px 10px 16px 0px rgba(14, 21, 89, 0.16);
 }
 .btn-submit {
@@ -612,22 +604,49 @@ body {
   font-weight: 600;
   line-height: normal;
 }
-.qr-code {
+.qr-code-box {
+  width: 280px;
+  height: 360px;
+  border-radius: 40px;
+  background: #fff;
+  margin-top: 36px;
   margin-bottom: 112px;
+  display: inline-block;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
-.kehormatan {
+.qr-code-box p {
+  margin-bottom: 20px;
+}
+.img-qr {
+  margin-top: 40px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.box-327 {
   width: 327px;
+  display: flex;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .name-close {
+  margin-top: 47px;
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.name-close hr {
+.hr-linear {
   width: 40px;
   border: 1px solid transparent;
   background: linear-gradient(45deg, #ffe68e, #d8a217) border-box; /*3*/
@@ -637,6 +656,12 @@ body {
   mask-composite: exclude; /*5*/
 }
 
+.hr-white {
+  width: 40px;
+  border: 1px solid white;
+  background: white;
+}
+
 .close-alert {
   color: #fff;
   font-family: Poppins;
@@ -644,7 +669,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 80px;
+  margin-top: 55px;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -676,4 +701,63 @@ body {
   display: flex;
   gap: 4px;
   justify-content: center;
+}
+
+.mempelai {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-mempelai {
+  width: 307px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-mempelai {
+  width: 110px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.name-item-mempelai {
+  display: flex;
+  width: 180px;
+  height: 124px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+.name-item-mempelai hr {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  opacity: 30%;
+}
+.map-box {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-box {
+  width: 327px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
