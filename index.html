@@ -6,10 +6,11 @@
     <title>Wedding</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cover.css" />
+    <link rel="stylesheet" href="css/concept-6.css" />
   </head>
 
   <body>
-    <div class="cover cover-container" id="cover">
+    <!-- <div class="cover cover-container" id="cover">
       <div class="cover-utama">
         <h1 class="wedding-of">The Wedding of</h1>
         <div>
@@ -28,9 +29,9 @@
 
         <button class="btn-inv" onclick="hide()">💌 Buka Undangan</button>
       </div>
-    </div>
-    <div class="cover-date dark-red main-containerfilter" id="main">
-      <div class="cover-main">
+    </div> -->
+    <div class="cover-date dark-red main-container" id="main">
+      <div class="cover-main border-gradient">
         <img class="ornament1" src="assets/svg/ornament.svg" alt="" />
         <div>
           <p class="married-16-pop color-linear">We are getting</p>
@@ -56,7 +57,7 @@
         <img class="ornament2" src="assets/svg/ornament.svg" alt="" />
       </div>
 
-      <div class="restu">
+      <div class="restu padding-top-56">
         <p class="married-18-pop color-linear">
           بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْ
         </p>
@@ -94,14 +95,16 @@
           </div>
         </div>
       </div>
-      <div class="ringkasan-acara">
+
+      <!-- Ringkasan Acara -->
+      <div class="ringkasan-acara padding-top-134">
         <div class="ringkasan-header-box">
           <h1 class="married-18-pop color-linear">Ringkasan Acara</h1>
           <p class="married-14-pop color-linear">
             Serangkaian acara kami nantinya
           </p>
         </div>
-        <img src="assets/png/masjid.png" alt="masjid" />
+        <img class="img-230" src="assets/png/masjid.png" alt="masjid" />
 
         <div class="akad-box color-linear">
           <h1 class="married-18-pop">Akad Nikah</h1>
@@ -113,7 +116,7 @@
         </div>
         <p class="married-14-pop-orange">See on Gmaps Mode</p>
 
-        <img src="assets/png/ikn.png" alt="" />
+        <img class="img-230" src="assets/png/ikn.png" alt="" />
         <div class="akad-box color-linear">
           <h1 class="married-18-pop">Resepsi Pernikahan</h1>
           <p class="married-14-pop">Monday, 32 February 2023 08:00 Pagi</p>
@@ -125,9 +128,7 @@
         <p class="married-14-pop-orange">See on Gmaps Mode</p>
       </div>
       <div class="ourstory">
-        <div class="img-ourstory">
-          <img class="img-radius img-230" src="assets/svg/tangan.svg" alt="" />
-        </div>
+        <img class="img-ourstory" src="assets/svg/tangan.svg" alt="" />
 
         <div class="ourstory-header-box">
           <h1 class="married-18-pop color-linear">Our Story Begin</h1>
@@ -185,7 +186,9 @@
           <p class="married-20-pop color-linear">A Glimpse of</p>
           <h1 class="married-52-birth color-linear">Our Memories</h1>
         </div>
-        <div class="tron-video"></div>
+        <div class="tron-video">
+          <img class="tron-video" src="assets/png/video.png" alt="" />
+        </div>
         <div class="tron-image">
           <img
             class="tron-image1"
@@ -207,7 +210,7 @@
       <div class="message">
         <div class="message-title">
           <h1 class="married-18-pop color-linear">Kirim Ucapan</h1>
-          <p class="married-14-pop color-linear">
+          <p class="married-14-pop color-linear color-opacity">
             Rangkaian kata kata untuk kami yang Sedang berbagahia
           </p>
         </div>
@@ -245,40 +248,51 @@
         </div>
 
         <div class="ucapan">
-          <h1 class="married-18-pop color-linear">RSVP dan Ucapan</h1>
+          <h1 class="married-18-pop color-linear-v2">RSVP dan Ucapan</h1>
 
           <form action="">
             <div class="box-form">
               <div class="form-grup">
-                <label for="name" class="married-14-pop color-linear"
+                <label for="name" class="married-14-pop color-linear-v2"
                   >Nama</label
                 >
-                <input class="form-linear" type="text" placeholder="Rahmat" />
+                <input class="form-linear" type="text" placeholder="" />
               </div>
               <div class="form-grup">
-                <label for="name" class="married-14-pop color-linear"
+                <label for="name" class="married-14-pop color-linear-v2"
                   >Alamat</label
                 >
-                <input class="form-linear" type="text" placeholder="Rahmat" />
+                <input class="form-linear" type="text" placeholder="" />
               </div>
 
               <div class="form-grup-col">
                 <div class="form-grup">
-                  <label for="name" class="married-14-pop color-linear"
+                  <label
+                    for="undangan-dari"
+                    class="married-14-pop color-linear-v2"
                     >Undangan Dari</label
                   >
-                  <input class="form-linear" type="text" placeholder="Rahmat" />
+                  <select class="form-linear" name="undangan-dari" id="">
+                    <option value="keluarga pria">Keluarga Pria</option>
+                    <option value="keluarga pria">Keluarga Wanita</option>
+                  </select>
                 </div>
                 <div class="form-grup">
-                  <label for="name" class="married-14-pop color-linear"
+                  <label
+                    for="jumlah kehadiran"
+                    class="married-14-pop color-linear-v2"
                     >Jumlah Kehadiran</label
                   >
-                  <input class="form-linear" type="text" placeholder="Rahmat" />
+                  <select class="form-linear" name="jumlah-kehadiran">
+                    <option value="1">1 Tamu</option>
+                    <option value="2">2 Tamu</option>
+                    <option value="3">3 Tamu</option>
+                  </select>
                 </div>
               </div>
 
               <div class="form-grup">
-                <label for="ucapan" class="married-14-pop color-linear"
+                <label for="ucapan" class="married-14-pop color-linear-v2"
                   >Ucapan</label
                 >
                 <textarea class="form-linear"></textarea>
@@ -314,7 +328,7 @@
 
             <div class="img-payment-box">
               <a href="#" class="married-16-pop color-linear">
-                <img src="#" alt="" width="24px" />
+                <img src="assets/png/bni.png" alt="" width="24px" />
                 BNI
               </a>
             </div>
@@ -327,22 +341,29 @@
           </div>
         </div>
 
-        <div class="qr-code">
-          <div></div>
+        <div class="qr-code-box">
+          <img class="img-qr" src="assets/png/qrcode.png" alt="" />
+          <h2 class="married-18-pop">Gopay -085677284729</h2>
+          <p>A.n. Adin Yanuar</p>
+          <div>
+            <a class="married-14-pop color-orange" href="">
+              <img src="/assets/svg/copy.svg" alt="" /> Copy
+            </a>
+          </div>
         </div>
 
-        <div class="kehormatan">
-          <p class="married-14-pop color-linear">
+        <div class="box-327">
+          <p class="married-14-pop color-linear-v2">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
-            Bapak/ibu/Saudara/i berkenan hadir untuk memberikan do’a restu
+            Bapak/ibu/ Saudara/i berkenan hadir untuk memberikan do’a restu
             kepada kedua mempelai.
           </p>
         </div>
 
         <div class="name-close">
-          <hr />
+          <hr class="hr-linear" />
           <h3 class="married-42-birth color-linear">Adin & Lisa</h3>
-          <hr />
+          <hr class="hr-linear" />
         </div>
         <p class="close-alert color-linear">Himbauan Protocol Kesehatan :</p>
 
@@ -371,5 +392,6 @@
         document.getElementById("main").style.filter = "none";
       }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </body>
 </html>
